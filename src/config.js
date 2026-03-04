@@ -92,7 +92,7 @@ const config = {
         {
             id: "gift-1",
             title: "First Surprise",
-            unlockDate: "2026-03-05T09:00:00", // Unlocks at 9 AM on birthday
+            unlockDate: "2026-03-05T12:00:00", // Unlocks at 9 AM on birthday
             image: "/happycat.jpg",
             message: "Start the day right!",
             clue: "Check the kitchen table."
@@ -125,11 +125,12 @@ const config = {
 
     // 5. Letter Paragraphs (formerly Love Notes)
     loveNotes: [
-        "Words cannot truly capture how much you mean to me, but I wanted to try. From the moment you walked into my life, everything became brighter, warmer, and endlessly beautiful.",
-        "You have the most beautiful smile that can light up my darkest days.",
-        "Every single day with you is a gift that I cherish deeply.",
-        "I love how kind your heart is, your chaos, and how you support my wildest dreams.",
-        "On this special day, I just want you to know that I appreciate you more than you'll ever know."
+        "Words cannot truly capture how much you mean to me, but I wanted to try. You are the best thing to ever happen to me. I fall in love with you more and more everyday. From the moment you walked into my life, everything became brighter, warmer, and endlessly beautiful.",
+        "You have the most beautiful smile that can light up my darkest days. I have come to realise that i cannot live without you, you have become part of my life. I cannot imagine a day without you.",
+        "After many many incidents i've realised that i'm the luckiest person alive to have you in my life. You literally started crying when i cried, you took itna zyda care of me during SIs, i cannot imagine any other non blood relative to do this for me, to have such empathy for me.",
+        "I love how silly we are and i am so excited for the future we have ahead of us. No day will be boring when i'm with you. I can't wait for all the adventures, the laughter, and the love that awaits us. I am so lucky to have found the love of my life and ahead at such a young age",
+        "I tried to make your 21 special, i hope you liked it. I cannot believe i fell for someone itne zor se. Virtual hugs^infinity.",
+        "On this special day, I just want you to know that I appreciate you more than you'll ever know. And just as i say Dal Chawal and pizzas with you for life <3."
     ],
 
     // 6. Reasons
