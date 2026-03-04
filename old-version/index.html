@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Princess 👑</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Magical Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;500;700&family=Cinzel+Decorative:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Magic Cursor Trail Container -->
+    <div id="cursor-trail"></div>
+
+    <!-- Background Elements -->
+    <div class="background-castle"></div>
+    <div class="sparkles-container"></div>
+
+    <!-- Floating SVGs -->
+    <div class="floating-svg-container">
+        <img src="bow-ribbon-svgrepo-com.svg" class="floating-svg svg-bow" alt="bow">
+        <img src="butterfly-svgrepo-com.svg" class="floating-svg svg-butterfly" alt="butterfly">
+        <img src="fairy-svgrepo-com.svg" class="floating-svg svg-fairy" alt="fairy">
+        <img src="bow-ribbon-svgrepo-com.svg" class="floating-svg svg-bow-2" alt="bow">
+        <img src="butterfly-svgrepo-com.svg" class="floating-svg svg-butterfly-2" alt="butterfly">
+        <img src="fairy-svgrepo-com.svg" class="floating-svg svg-fairy-2" alt="fairy">
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+        <div class="content-wrapper">
+            <h1 class="animate-pop-in title-font">Happy Birthday to My Princess <span class="crown">👑</span></h1>
+            <p class="subtitle fade-in-delay">Welcome to your enchanted realm...</p>
+            <button class="btn btn-royal shimmer-effect" onclick="scrollToSection('love-letter')">Enter 💕</button>
+        </div>
+    </section>
+
+    <!-- LOVE LETTER SECTION -->
+    <section id="love-letter" class="section">
+        <div class="scroll-paper fade-in-on-scroll">
+            <div class="scroll-header">
+                <h2>A Royal Decree 📜</h2>
+            </div>
+
+            <div class="toggle-container">
+                <button class="toggle-btn active" onclick="toggleLetter('short')">Short & Sweet</button>
+                <button class="toggle-btn" onclick="toggleLetter('long')">Deep & Emotional</button>
+            </div>
+
+            <div class="letter-content active" id="short-letter">
+                <p>
+                    My Dearest Fairy, <br><br>
+                    You are the magic in my mundane world. Every moment with you feels like a page out of a storybook.
+                    <br><br>
+                    Thank you for being my happily ever after. ✨
+                </p>
+            </div>
+
+            <div class="letter-content hidden" id="long-letter">
+                <p>
+                    To My Beloved Princess, <br><br>
+                    Once upon a time, I was just wandering through life, and then I found you.
+                    You have this incredible power to make everything okay just by smiling.
+                    <br><br>
+                    I admire your strength, your kindness, and the way you care for everyone around you.
+                    You truly are a fairy in disguise.
+                    <br><br>
+                    I promise to treat you like royalty, today and every day.
+                    <br><br>
+                    Forever yours, <br>
+                    Your Prince
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEMORIES SECTION -->
+    <section id="memories" class="section">
+        <h2 class="section-title fade-in-on-scroll title-font">Royal Memories 🏰</h2>
+        <div class="grid-container">
+            <!-- 
+                INSTRUCTIONS: 
+                Replace placeholders with real images.
+            -->
+            <div class="memory-card fade-in-on-scroll">
+                <div class="mirror-frame">
+                    <div class="placeholder-img" style="background-color: #ffd1dc;">📸 Us.jpg</div>
+                    <!-- <img src="assets/images/photo1.jpg" alt="Our memory"> -->
+                </div>
+                <div class="caption">The Beginning ✨</div>
+            </div>
+
+            <div class="memory-card fade-in-on-scroll" style="transition-delay: 0.1s;">
+                <div class="mirror-frame">
+                    <div class="placeholder-img" style="background-color: #fff0f5;">📸 Date.jpg</div>
+                    <!-- <img src="assets/images/photo2.jpg" alt="Our memory"> -->
+                </div>
+                <div class="caption">Adventures 🧚‍♀️</div>
+            </div>
+
+            <div class="memory-card fade-in-on-scroll" style="transition-delay: 0.2s;">
+                <div class="mirror-frame">
+                    <div class="placeholder-img" style="background-color: #e6e6fa;">📸 Silly.jpg</div>
+                    <!-- <img src="assets/images/photo3.jpg" alt="Our memory"> -->
+                </div>
+                <div class="caption">Your Magic 💖</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REASONS I LOVE YOU SECTION -->
+    <section id="reasons" class="section">
+        <h2 class="section-title fade-in-on-scroll title-font">Why You Rule My Heart 💖</h2>
+        <div class="checklist">
+            <div class="reason-item fade-in-on-scroll">
+                <span class="wand-icon">🪄</span>
+                <span class="reason-text">You have a heart of gold</span>
+            </div>
+            <div class="reason-item fade-in-on-scroll">
+                <span class="wand-icon">🪄</span>
+                <span class="reason-text">Your smile works like a magic spell</span>
+            </div>
+            <div class="reason-item fade-in-on-scroll">
+                <span class="wand-icon">🪄</span>
+                <span class="reason-text">You support my dreams like a true Queen</span>
+            </div>
+            <div class="reason-item fade-in-on-scroll">
+                <span class="wand-icon">🪄</span>
+                <span class="reason-text">You're the cutest fairy in the world</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROPOSAL SECTION -->
+    <section id="proposal" class="section proposal-section">
+        <h2 class="animate-pulse title-font">Are you ready for your birthday surprise? 🎁</h2>
+
+        <!-- Happy Cat Image -->
+        <img src="happycat.jpg" alt="Happy Cat" class="happy-cat-img"
+            style="width: 100%; max-width: 150px; display: block; margin: 20px auto; mix-blend-mode: multiply;">
+
+        <div class="button-group">
+            <button id="yes-btn" class="btn btn-yes" onclick="handleYesClick()">Oui 💖</button>
+            <button id="no-btn" class="btn btn-no" onmouseover="moveNoButton()" onclick="moveNoButton()">No </button>
+        </div>
+    </section>
+
+    <!-- GOOD GIRL POPUP (Hidden initially) -->
+    <div id="good-girl-popup" class="popup-overlay hidden">
+        <div class="popup-content bounce-in">
+            <span class="close-btn" onclick="closePopup()">×</span>
+            <!-- Patting Head GIF -->
+            <div class="tenor-gif-embed" data-postid="17946879" data-share-method="host" data-aspect-ratio="1.06667"
+                data-width="100%">
+                <a href="https://tenor.com/view/mochi-mochi-peach-cat-cat-kitty-cute-pet-head-gif-17946879">Mochi Mochi
+                    Peach Cat Cat Sticker</a>
+                from <a href="https://tenor.com/search/mochi+mochi+peach+cat-stickers">Mochi Mochi Peach Cat
+                    Stickers</a>
+            </div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <h2 class="good-girl-text">That's a good girl... ❤️</h2>
+            <p>I knew you'd say yes.</p>
+            <button class="btn btn-royal" onclick="revealSurprise()">See Your Surprise ✨</button>
+        </div>
+    </div>
+
+    <!-- FINAL SURPRISE SECTION (Hidden initially) -->
+    <section id="surprise" class="section hidden">
+        <div class="card celebration-card">
+            <h2 class="title-font">Your Royal Date Awaits! 🎉</h2>
+            <div class="date-idea">
+                <h3>The Plan:</h3>
+                <p>📅 March 5th</p>
+                <p>📍 The Enchanted Forest (or [Location])</p>
+                <p>🕖 Sunset</p>
+            </div>
+            <p class="footer-note">I love you, my princess! ❤️</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with Magic & Love ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
